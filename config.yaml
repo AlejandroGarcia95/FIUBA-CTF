@@ -1,0 +1,11 @@
+---
+machine:
+  name: "FIUBA-CTF"
+  image: "ubuntu/xenial64"
+  memory: "1024"
+  cpus: "2"
+  ip: 10.0.0.2
+
+levels:
+  amount: 2
+  path: levels

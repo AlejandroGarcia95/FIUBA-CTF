@@ -1,0 +1,7 @@
+This is a helper example for the level2.
+
+The idea is to have one of these helpers to be printed when the user begins a level. Here we can write hints like the level objective.
+
+For example: to check this level, visit 10.0.0.2:8000.
+
+Remember to stop the level with "stop-level-2".
