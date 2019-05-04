@@ -1,7 +1,7 @@
-This is a helper example for the level2.
+-- FIUBA CTF: Level 2 --
 
-The idea is to have one of these helpers to be printed when the user begins a level. Here we can write hints like the level objective.
+Being unemployed and with computing knowledge, you realize your easiest way of succeeding in life is trying to hack some random internet page.
 
-For example: to check this level, visit 10.0.0.2:8000.
+Your goal for this level is to gain access to some random page by getting the admininstrator credentials. You can visit 10.0.0.2:8000 on your browser to find the web page.
 
-Remember to stop the level with "stop-level-2".
+Remember to stop the level with "stop-level-2" when you finish.

@@ -1,7 +1,7 @@
-This is a helper example for the level1.
+-- FIUBA CTF: Level 1 --
 
-The idea is to have one of these helpers to be printed when the user begins a level. Here we can write hints like the level objective.
+The development team of "The company INC" has recently been given the task of designing the new company website. Although they have barely started, the company is  well aware of previous episodes with information security issues relating the team. In this context, you have been contracted by the company to watch over the team on matters of security.
 
-For example: to check this level, visit 10.0.0.1:8000.
+Your goal for this level is to find the development team secrets file. In order to check their website, visit 10.0.0.2:8000 on your browser. 
 
-Remember to stop the level with "stop-level-1".
+Remember to stop the level with "stop-level-1" when you finish.
