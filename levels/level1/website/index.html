@@ -71,7 +71,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="/action_page.php">
+<form name="form" action="javascript:loginfunc();">
   <div class="imgcontainer">
     <img src="static/img_avatar.png" alt="Avatar" class="avatar">
   </div>
@@ -87,6 +87,17 @@ span.psw {
 
   </div>
 </form>
+
+<script>
+function loginfunc() {
+    if((document.form.uname.value=="admin") && (document.form.psw.value=="mpzq21049e")) {
+	window.location = "mpzq21049e.html";
+    }
+    else {
+	alert("Invalid credentials");
+    }
+}
+</script>
 
 </body>
 </html>

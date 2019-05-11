@@ -1,5 +1,4 @@
-FROM busybox
-
-COPY ./website/ /www/
+FROM httpd:2.4
+COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY ./website/ /usr/local/apache2/htdocs/
 EXPOSE 8000
-CMD trap "exit 0;" TERM INT; httpd -p 8000 -h /www -f & wait

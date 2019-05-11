@@ -1,7 +1,7 @@
--- FIUBA CTF: Level 1 --
+-- FIUBA CTF: Level 2 --
 
-Being unemployed and with computing knowledge, you realize your easiest way of succeeding in life is trying to hack some random internet page.
+The development team of "The company INC" has recently been given the task of designing the new company website. Although they have barely made the homepage, the company is  well aware of previous episodes with information security issues relating the team and wants to take preventive actions. In this context, you have been contracted by the company to watch over the team on matters of security.
 
-Your goal for this level is to gain access to some random page by getting the admininstrator credentials. You can visit 10.0.0.2:8001 on your browser to find the web page.
+Your goal for this level is to find the development team secrets file. In order to check their website, visit 10.0.0.2:8002 on your browser. 
 
-Remember to stop the level with "stop-level-1" when you finish.
+Remember to stop the level with "stop-level-2" when you finish.
