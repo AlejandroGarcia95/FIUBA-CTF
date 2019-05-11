@@ -1,0 +1,7 @@
+-- FIUBA CTF: Level 3 --
+
+The development team of "The company INC" has recently been given the task of designing the new company website. Although they have barely made the homepage, the company is  well aware of previous episodes with information security issues relating the team and wants to take preventive actions. In this context, you have been contracted by the company to watch over the team on matters of security.
+
+Your goal for this level is to find the development team secrets file. In order to check their website, visit 10.0.0.2:8003 on your browser. 
+
+Remember to stop the level with "stop-level-3" when you finish.

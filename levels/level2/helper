@@ -1,7 +1,5 @@
--- FIUBA CTF: Level 2 --
+Here are some useful links for the level 1 challenge:
 
-Being unemployed and with computing knowledge, you realize your easiest way of succeeding in life is trying to hack some random internet page.
-
-Your goal for this level is to gain access to some random page by getting the admininstrator credentials. You can visit 10.0.0.2:8000 on your browser to find the web page.
-
-Remember to stop the level with "stop-level-2" when you finish.
+https://www.hostinger.com/tutorials/what-is-html
+https://www.tutorialspoint.com/html/html_javascript.htm
+https://stackoverflow.com/questions/48557100/inspect-element-code-and-view-page-source-code-of-a-web-page

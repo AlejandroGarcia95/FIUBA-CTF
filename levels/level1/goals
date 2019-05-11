@@ -1,0 +1,7 @@
+-- FIUBA CTF: Level 1 --
+
+Being unemployed and with computing knowledge, you realize your easiest way of succeeding in life is trying to hack some random internet page.
+
+Your goal for this level is to gain access to some random page by getting the admininstrator credentials. You can visit 10.0.0.2:8001 on your browser to find the web page.
+
+Remember to stop the level with "stop-level-1" when you finish.
