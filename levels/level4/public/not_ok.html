@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<body>
+<div class="container">
+    <br>
+    
+    <div class="row">
+
+        <aside class="col-sm-4"></aside> <!-- col.// -->
+
+        <aside class="col-sm-4">
+        <div class="card center">
+            <article class="card-body">
+                <h4 class="card-title text-center mb-4 mt-1">Sign in</h4>
+                <hr>
+                <div class="alert alert-danger" role="alert">
+                        KBGATO
+                </div>
+                <form>
+                <div class="form-group" >
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="" class="form-control" id="user" placeholder="Email or user">
+                </div> <!-- input-group.// -->
+                </div> <!-- form-group// -->
+                <div class="form-group" action="alert('Alan gato')">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input class="form-control" id="password" placeholder="******" type="password">
+                </div> <!-- input-group.// -->
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <a onclick="javascript:foo()" class="btn btn-primary btn-block ">Login</a>
+                </div> <!-- form-group// -->
+                <p class="text-center">Forgot your password? Contact IT</p>
+                </form>
+            </article>
+        </div> <!-- card.// -->
+        </aside> <!-- col.// -->
+
+        <aside class="col-sm-4"></aside> <!-- col.// -->
+
+    </div> <!-- row.// -->
+</div>
+
+<script>
+    function foo() {
+        location.href = "/pong?user="+getUser()+"&password="+getPassword();
+    }
+
+    function getPassword() {
+        var x = document.getElementById("password").value;
+        return x;
+    }
+    function getUser() {
+        var x = document.getElementById("user").value;
+        return x;
+    }
+</script>
+
+</body>
+
+</html>
