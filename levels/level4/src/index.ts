@@ -48,7 +48,7 @@ app.get("/answer", async (req, response) => {
       response.send(complete_text_2);
     }
   })
-}
+});
 
 app.get("/pong", async (req, response) => {
   const password = req.query.password

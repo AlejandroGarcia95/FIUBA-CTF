@@ -6,7 +6,7 @@ services:
     depends_on:
       - postgres
     ports:
-      - "3000:3000"
+      - "8004:3000"
       - "9229:9229"
 
   postgres:
