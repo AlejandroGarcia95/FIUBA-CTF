@@ -1,7 +1,5 @@
-This is a helper example for the level1.
+Here are some useful links for the level 1 challenge:
 
-The idea is to have one of these helpers to be printed when the user begins a level. Here we can write hints like the level objective.
-
-For example: to check this level, visit 10.0.0.1:8000.
-
-Remember to stop the level with "stop-level-1".
+https://www.hostinger.com/tutorials/what-is-html
+https://www.tutorialspoint.com/html/html_javascript.htm
+https://stackoverflow.com/questions/48557100/inspect-element-code-and-view-page-source-code-of-a-web-page
