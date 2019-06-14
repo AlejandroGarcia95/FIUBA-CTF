@@ -16,71 +16,34 @@ app.get("/", async (req, res) => {
   res.sendFile(process.cwd() + '/public/index.html')
 });
 
-app.get("/ping", async (req, res) => {
-  const database = await client.query("SELECT 1 + 1").then(() => "up").catch(() => "down");
-
-  res.send({
-    environment: process.env.NODE_ENV,
-    database,
-  });
-});
-
-app.get("/answer", async (req, response) => {
-  var ans;
-  var text = fs.readFileSync(process.cwd() + '/public/ok.html', "utf-8");
-  
-  const query = "SELECT * FROM users WHERE username='lolo' AND password='lala'; SELECT * FROM users; SELECT * FROM users WHERE username='hello'";
-  const password = "lala'; SELECT * FROM users; SELECT * FROM users WHERE username='hello"
-  
-  client.query(query, (err, res) => {
-    if (err) {
-      ans = err.stack
-
-      const complete_text = text.replace("KBGATO", "Error: " + JSON.stringify(ans));
-      const complete_text_2 = complete_text.replace("OKGATO", "If you query for: " + query)
-      response.send(complete_text_2);
-
-    } else {
-      ans = res
-
-      const complete_text = text.replace("KBGATO", "Error: " + JSON.stringify(ans));
-      const complete_text_2 = complete_text.replace("OKGATO", "If you put password: " + password + ".\nYou actually query for: " + query)
-      response.send(complete_text_2);
-    }
-  })
-});
-
 app.get("/pong", async (req, response) => {
   const password = req.query.password
   const user = req.query.user
-  var text = fs.readFileSync(process.cwd() + '/public/not_ok.html', "utf-8");
-  var ans;
-  client.query("SELECT * FROM users WHERE username = '" + user + "' AND password = '" + password + "'", (err, res) => {
-    if (err) {
-      ans = err.stack
-
-      const complete_text = text.replace("KBGATO", "Error: " + JSON.stringify(ans));  
-      response.send(complete_text);
-
+  var daquery = "SELECT * FROM users WHERE username = '" + user + "' AND password = '" + password + "'";
+  console.log(daquery);
+  
+  var ans = fs.readFileSync(process.cwd() + '/public/index.html', "utf-8");
+  
+  client.query(daquery, (err, res) => {
+    if (err || (!res.rows) || (res.rows.length == 0)) {
+      console.log("Request error");
+      ans = ans.replace("hidden", "").replace("LOGINERROR", "Invalid username or password");
     } else {
-      ans = res
-
-      const complete_text = text.replace("KBGATO", "Error: " + JSON.stringify(ans));  
-      response.send(complete_text);
+      console.log("Request ok");
+      ans = fs.readFileSync(process.cwd() + '/public/rlcgecrbenlcvdg.html', "utf-8");
     }
+    response.send(ans);
   })
 });
 
 const init_users_table = () => {
   const query = client.query("CREATE TABLE users(id SERIAL PRIMARY KEY, username VARCHAR(40) NOT NULL, password VARCHAR(40) NOT NULL)");
-  const query2 = client.query("INSERT INTO users(id, username, password) VALUES(1, 'FLAG', 'z4l4l4')");
+  const query2 = client.query("INSERT INTO users(id, username, password) VALUES(1, 'micardi', 'rlcgecrbenlcvdg')");
 }
 
 (async () => {
   await client.connect();
-
   init_users_table();
-
   app.listen(PORT, () => {
     console.log("Started at http://localhost:%d", PORT);
   });
