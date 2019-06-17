@@ -1,0 +1,7 @@
+-- FIUBA CTF: Level 6 --
+
+Winter is near, and you can't help but remember how terrible the end of Game of Thrones was. With about eight years of your life wasted (and hundreds of dollars in merchandising), you consider either doing therapy or hacking the writers' page to rewrite the final season.
+
+Since you cannot afford a therapist, your goal for this level is to gain access to the LDAP GoT directory. You can find the site on 10.0.0.2:8006.
+
+Remember to stop the level with "stop-level-6" whenever you are done.

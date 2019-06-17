@@ -7,5 +7,5 @@ machine:
   ip: 10.0.0.2
 
 levels:
-  amount: 5
+  amount: 6
   path: levels
