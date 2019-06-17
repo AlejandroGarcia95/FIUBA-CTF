@@ -1,0 +1,7 @@
+FROM wernight/phantomjs
+
+COPY ./victim.sh /victim.sh
+COPY ./xss-bot.js /xss-bot.js
+
+
+ENTRYPOINT sh /victim.sh
