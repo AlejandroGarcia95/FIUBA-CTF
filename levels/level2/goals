@@ -1,7 +1,7 @@
 -- FIUBA CTF: Level 2 --
 
-The development team of "The company INC" has recently been given the task of designing the new company website. Although they have barely made the homepage, the company is  well aware of previous episodes with information security issues relating the team and wants to take preventive actions. In this context, you have been contracted by the company to watch over the team on matters of security.
+After ten years of an unbreakable friendship, your best friend in the world stabs you in the back and steals your lover. Enraged, you plan for an informatic revenge and decide to hack their web page.
 
-Your goal for this level is to find the development team secrets file. In order to check their website, visit 10.0.0.2:8002 on your browser. 
+Your ex friend's login page is on 10.0.0.2:8002. Go there and teach them not to mess with you!
 
-Remember to stop the level with "stop-level-2" when you finish.
+Remember to stop the level with "stop-level-2" after completing your vengeance.

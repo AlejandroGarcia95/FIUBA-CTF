@@ -1,15 +1,4 @@
-FROM node:10.15.0-alpine
-EXPOSE 3000 9229
-
-WORKDIR /home/app
-
-COPY package.json /home/app/
-COPY package-lock.json /home/app/
-
-RUN npm ci
-
-COPY . /home/app
-
-RUN npm run build
-
-CMD ./scripts/start.sh
+FROM httpd:2.4
+COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
+COPY ./website/ /usr/local/apache2/htdocs/
+EXPOSE 8000

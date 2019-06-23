@@ -1,7 +1,9 @@
 -- FIUBA CTF: Level 6 --
 
-Winter is near, and you can't help but remember how terrible the end of Game of Thrones was. With about eight years of your life wasted (and hundreds of dollars in merchandising), you consider either doing therapy or hacking the writers' page to rewrite the final season.
+After a weekend showing your little nephew the games of your childhood, you want to play Age of Mythology again. However, the official Steam version is too expensive for your university teacher salary, so you choose to look at... not so legal pages. 
 
-Since you cannot afford a therapist, your goal for this level is to gain access to the LDAP GoT directory. You can find the site on 10.0.0.2:8006.
+Looking carefully at the reviews of one of these pages, you think you can exploit it like if you were some Son of Osiris.
 
-Remember to stop the level with "stop-level-6" whenever you are done.
+Your goal for this level is to steal the cookies of the site's users. You can find it on 10.0.0.2:8006 on your browser.
+
+Don't forget to stop the level with "stop-level-6".

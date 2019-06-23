@@ -1,12 +1,20 @@
-FROM andrewmichaelsmith/docker-heartbleed
+FROM strm/apache
 
-RUN openssl req -x509 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt -subj "/C=JP/ST=Osaka/L=Domino City/O=Kaiba Corp/CN= ######## CONGRATULATIONS! YOU HAVE CLEARED THIS LEVEL! ########/CN=10.0.0.2" -nodes -multivalue-rdn
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 
-COPY ./website/ /usr/share/apache2/default-site/
-COPY ./website/ /var/www/
-COPY ./startup.sh /startup.sh
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y slapd ldap-utils php5-ldap && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+COPY phpldap /www
+
+COPY ./ldap-conf /etc/ldap/slapd.d
+RUN chown openldap -R /etc/ldap/slapd.d
+
+COPY ./ldap-data /var/lib/ldap
+RUN chown openldap -R /var/lib/ldap
+
+COPY main.sh /
+COPY config.php /www/config/config.php
 
 EXPOSE 80
 
-ENTRYPOINT ["bash", "/startup.sh"]
-
+ENTRYPOINT ["/main.sh"]

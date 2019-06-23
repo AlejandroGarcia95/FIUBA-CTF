@@ -1,6 +1,13 @@
 version: '3'
 services:
-  web:
-    build: .
+  site:
+    build:
+      context: .
+      dockerfile: SiteDockerfile
     ports:
      - "8006:80"
+  victim:
+    build:
+      context: .
+      dockerfile: VictimDockerfile
+

@@ -1,13 +1,7 @@
 version: '3'
 services:
-  site:
-    build:
-      context: .
-      dockerfile: SiteDockerfile
+  web:
+    build: .
     ports:
      - "8007:80"
-  victim:
-    build:
-      context: .
-      dockerfile: VictimDockerfile
-
+     - "443:443"

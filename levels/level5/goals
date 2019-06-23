@@ -1,7 +1,7 @@
 -- FIUBA CTF: Level 5 --
 
-After successfully finishing all Nicholas Sparks books, you think it's better to take on something more classic and start reading Edgar Allan Poe stories. However, your hacking instincts always awake, you smell you can exploit the stories website.
+Winter is near, and you can't help but remember how terrible the end of Game of Thrones was. With about eight years of your life wasted (and hundreds of dollars in merchandising), you consider either doing therapy or hacking the writers' page to rewrite the final season.
 
-Your goal for this level is to find the stories site private keys. You can find the site on 10.0.0.2:8005.
+Since you cannot afford a therapist, your goal for this level is to gain access to the LDAP GoT directory. You can find the site on 10.0.0.2:8005.
 
-As always, you can stop the level with "stop-level-5" whenever you are done.
+Remember to stop the level with "stop-level-5" whenever you are done.

@@ -1,6 +1,15 @@
-version: '3'
+# docker-compose.yml
+version: "3"
 services:
-  web:
+  app:
     build: .
+    depends_on:
+      - postgres
     ports:
-     - "8002:8000"
+      - "8002:3000"
+      - "9229:9229"
+
+  postgres:
+    image: postgres:11.2-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
