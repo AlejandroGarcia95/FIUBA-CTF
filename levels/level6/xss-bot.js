@@ -1,6 +1,6 @@
 var page = require('webpage').create();
 var host = "10.0.0.2";
-var url = "http://" + host + ":8007/view.php";
+var url = "http://" + host + ":8006/view.php";
 var timeout = 4000;
 
 phantom.addCookie({
